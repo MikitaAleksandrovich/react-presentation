@@ -1,25 +1,11 @@
 import React from "react";
 import "./Home.scss";
 import "./Home-media.scss";
-import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 import classNames from "classnames";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
-import puzzle from "../../assets/images/home/puzzle.svg";
-import phoneBackground from "../../assets/images/home/phoneBackground.svg";
-import phone from "../../assets/images/home/phone.svg";
-import slide1 from "../../assets/images/home/slider/slide1.gif";
-import slide2 from "../../assets/images/home/slider/slide2.png";
-import slide3en from "../../assets/images/home/slider/3.png";
-import slide4en from "../../assets/images/home/slider/4.png";
-import slide3ru from "../../assets/images/home/slider/3ru.svg";
-import slide4ru from "../../assets/images/home/slider/4ru.svg";
-import slide3cn from "../../assets/images/home/slider/3cn.svg";
-import slide4cn from "../../assets/images/home/slider/4cn.svg";
-import extensionImg from "../../assets/images/home/extensionImg.png";
+
+import first_slide_1 from '../../assets/images/slide_1/slide_1_img_1.png';
+import first_slide_2 from '../../assets/images/slide_1/slide_1_img_2.png';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -89,23 +75,7 @@ export default class Home extends React.Component {
         return ReactHtmlParser(this.props.text[text]);
     }
     render() {
-        const slickSettings = {
-            slides_to_show: 1,
-            dots: true,
-            pause_on_hover: true,
-            autoplay: true,
-            infinite: true,
-            speed: 900,
-            fade: true
-        };
-        const slideImg = {
-            slide3en,
-            slide4en,
-            slide3ru,
-            slide4ru,
-            slide3cn,
-            slide4cn
-        };
+
         const mobileClasses = classNames("img-phone-front", {
             show: this.state.showMobileWow
         });
@@ -117,9 +87,10 @@ export default class Home extends React.Component {
                             <h1 className="hero-title">
                                 {this.getLangText("headerTitle")}
                             </h1>
-                            <p className="subtitle">
+                            <h2 className="subtitle">
                                 {this.getLangText("headerSubtitle")}
-                            </p>
+                            </h2>
+                            
                         </div>
 
                         <div className="button-started">
@@ -133,256 +104,31 @@ export default class Home extends React.Component {
                                 {this.getLangText("buttonStarted")}
                             </a>
                         </div>
+                        
                     </div>
                 </header>
 
                 <div className="container">
-                    <section className="content content-enjoyLearning">
-                        <div className="enjoyIt-wrapper">
-                            <div className="enjoyIt-heading">
-                                <h2>{this.getLangText('headPleasure')}</h2>
-                                <p>{this.getLangText("contentPleasure")}</p>
-                            </div>
-                            <div className="imgEnjoy">
-                                <img src={imgEnjoy} alt="Enjoy learning" />
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="content content-context-memory">
-                        <div className="context-title">
-                            <h2 className="context-heading">
-                                {this.getLangText("headMemory")}
-                            </h2>
-                            <p>{this.getLangText("contentMemory")}</p>
-                        </div>
-                        <div className="img-context-puzzle">
-                            <img src={puzzle} alt="Context puzzle" />
-                        </div>
-                    </section>
-
                     <section
                         className="content content-ourApp"
                         id={this.sections.toGetStarted.id}
                         ref={this.sections.toGetStarted.ref}
                     >
-                        <div className="app-download-wrapper">
-                            <div className="img-phone">
+                        <div className="first-slide">
+                            <div className="img">
                                 <img
-                                    src={phoneBackground}
-                                    className="img-phone-back"
-                                    alt="Mobile background"
-                                />
-                                <img
-                                    src={phone}
+                                    src={first_slide_1}
                                     className={mobileClasses}
                                     ref={this.mobileWow}
                                     alt="EasyLang app"
                                 />
                             </div>
-                            <div className="content-description">
-                                <h2>{this.getLangText("headOurApp")}</h2>
-                                <p>{this.getLangText("contentOurApp")}</p>
-                                <div className="button-block">
-                                    <div className="button-group button-group-1">
-                                        <a
-                                            className="button-install button-chrome"
-                                            href="https://github.com/easably/extension/releases/download/0.2.3/extension.zip"
-                                        >
-                                            {this.getLangText("extension")}
-                                        </a>
-                                        <a
-                                            href="https://github.com/easably/extension/blob/master/README.md"
-                                            className="button-install button-guide"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            role="button"
-                                        >
-                                            <i className="fa fa-cog"> </i>{" "}
-                                            <span>
-                                                {this.getLangText(
-                                                    "extensionGuide"
-                                                )}
-                                            </span>
-                                        </a>
-                                    </div>
-
-                                    <div className="button-group button-group-2">
-                                        <a
-                                            className="button-install button-web"
-                                            href="http://easy4learn.com"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Web
-                                        </a>
-                                    </div>
-
-                                    <div className="button-group button-group-3">
-                                        <a
-                                            className="button-install button-android"
-                                            href="https://github.com/easably/context-tutor/releases/download/0.2.8/EasyLang.apk"
-                                        >
-                                            Android
-                                        </a>
-                                        <a
-                                            className="button-install button-iOS"
-                                            href="https://testflight.apple.com/join/w0Dyxqef"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            iOS
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                         
                         </div>
                     </section>
 
-                    <section
-                        className="content content-howItWorks"
-                        id={this.sections.howItWork.id}
-                        ref={this.sections.howItWork.ref}
-                    >
-                        <div>
-                            <h2>{this.getLangText("headHowItWorks")}</h2>
-                            <div className="slider-wrapper">
-                                <div className="slider">
-                                    <Slider
-                                        className="slides"
-                                        {...slickSettings}
-                                    >
-                                        <div className="slide 1th">
-                                            <figure className="slick-slide-inner">
-                                                <img src={slide1} alt="" />
-                                                <figcaption className="image-carousel-caption">
-                                                    {this.getLangText(
-                                                        "sliderCaptionFirst"
-                                                    )}
-                                                </figcaption>
-                                            </figure>
-                                        </div>
 
-                                        <div className="slide 2th">
-                                            <figure className="slick-slide-inner">
-                                                <img src={slide2} alt="" />
-                                                <figcaption className="image-carousel-caption">
-                                                    {this.getLangText(
-                                                        "sliderCaptionSecond"
-                                                    )}
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div className="slide 3th">
-                                            <img
-                                                src={
-                                                    slideImg[
-                                                        this.getLangText(
-                                                            "slideThird"
-                                                        )
-                                                    ]
-                                                }
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div className="slide 4th">
-                                            <img
-                                                src={
-                                                    slideImg[
-                                                        this.getLangText(
-                                                            "slideFourth"
-                                                        )
-                                                    ]
-                                                }
-                                                alt=""
-                                            />
-                                        </div>
-                                    </Slider>
-                                </div>
-                            </div>
-
-                            <div className="extension">
-                                <div className="extension-img">
-                                    {" "}
-                                    <img
-                                        src={extensionImg}
-                                        alt="extension for Chrome"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div className="call-to-action">
-                        <section
-                            className="content content-sources"
-                            id={this.sections.source.id}
-                            ref={this.sections.source.ref}
-                        >
-                            <div className="sources-wrapper">
-                                <div className="sources-title">
-                                    <h2>{this.getLangText('headSource')}</h2>
-                                    <p>{this.getLangText('contentSouce')}</p>
-                                </div>
-                                <div className="sources-block">
-                                    <div className="first-part">
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('movie')}</h3>
-                                            <p>
-                                                {this.getLangText('movieParagraph')}
-                                            </p>
-                                        </div>
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('news')}</h3>
-                                            <p>
-                                                {this.getLangText('newsParagraph')}
-                                            </p>
-                                        </div>
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('book')}</h3>
-                                            <p>
-                                                {this.getLangText('bookParagraph')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="second-part">
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('video')}</h3>
-                                            <p>
-                                                {this.getLangText('videoParagraph')}
-                                            </p>
-                                        </div>
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('music')}</h3>
-                                            <p>
-                                                {this.getLangText('musicParagraph')}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div className="blog">
-                        <h2>{this.getLangText('blog')}</h2>
-                        <div className="blog-button">
-                            <Link to="blog">{this.getLangText('Blog')}</Link>
-                        </div>
-                    </div>
                 </div>
-                <footer className="get-started-footer">
-                    <div className="button-started get-started">
-                        <a
-                            className="get-started-button2"
-                            href="#toGetStarted"
-                            onClick={e => {
-                                this.anchorClick(e, "toGetStarted");
-                            }}
-                        >
-                            {this.getLangText('getStarted')}
-                        </a>
-                    </div>
-                </footer>
             </div>
         );
     }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Router } from "@reach/router";
-import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
 import BtnTop from "../BtnTop";
@@ -29,7 +28,6 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Blog path="/blog/*"></Blog>
             <NotFound default></NotFound>
           </ScrollToTop>
         </Router>

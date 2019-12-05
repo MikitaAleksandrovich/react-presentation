@@ -1,6 +1,5 @@
 .Home {
-    background: url("../../assets/images/home/Illustration6(3).svg")
-        bottom/cover no-repeat;
+  
     background-size: 100%;
     .slick-slide {
         height: auto !important;
@@ -28,20 +27,20 @@
     }
 
     .hero {
-        background: no-repeat bottom/cover
-            url("../../assets/images/home/bcg3.svg");
+        background-color: #193a67;
         text-align: center;
         margin-top: -100px;
         padding-top: 100px;
     }
 
     .wrapper-hero {
-        padding: 8% 0 20%;
+        padding: 4% 0 20%;
     }
+
     /*hero*/
     .hero-title {
         margin: 0 15% 0.5%;
-        font-size: 2.3rem;
+        font-size: 3.2rem;
         font-weight: 600;
         line-height: 3.2rem;
         color: #fff;
@@ -80,8 +79,20 @@
 
     .button-started .get-started-button:hover,
     .button-started .get-started-button2:hover {
-        background-color: #ffb43f;
+        background-color: rgb(64, 156, 64);
     }
+
+    .first-slide {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .first-slide img {
+        width: 600px;
+        height: 400px;
+    }
+
+
 
     /*content*/
     .container {

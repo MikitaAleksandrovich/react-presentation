@@ -1,13 +1,11 @@
 {
-    "name": "中文",
-    "home": "家",
-    "ourBlog": "博客",
-    "ourApp": "EasyLang应用",
-    "HowItWork": "怎么运作",
-    "learningSources": "学习的来源",
-    "headerTitle": "用任何语言轻松发现信息世界",
-    "headerSubtitle": "开始享受学习语言的过程, 试试我们的应用程序",
-    "buttonStarted": "开始吧",
+    "name": "Polski",
+    "headerTitle": "Problem",
+    "headerSubtitle": "Energia z paliw kopalnych jest marnowana. Strata następuje w końcowym punkcie konsumpcji",
+    "buttonStarted": "Decyzja",
+
+
+    
     "headPleasure": "高兴地学习语言",
     "contentPleasure": "Netflix 和 Youtube 等任何来源都可以成为您的课程。 你只需找到自己喜欢的题目",
     "headMemory": "你所读过或看过的都是记忆的线索",
