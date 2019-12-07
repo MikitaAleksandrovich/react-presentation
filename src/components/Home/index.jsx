@@ -7,7 +7,7 @@ import { Element } from 'react-scroll'
 
 import first_slide_1 from '../../assets/images/slide_1/slide_1_img_1.png';
 import first_slide_2 from '../../assets/images/slide_1/slide_1_img_2.png';
-
+import image_1 from '../../assets/images/home/image_1.jpg';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -83,32 +83,29 @@ export default class Home extends React.Component {
         });
         return (
             <div className="Home">
-                <header className="hero">
-                    <div className="wrapper-hero">
+                   <div className="first-slide-container">
+                       <div 
+                            className={mobileClasses}
+                            ref={this.mobileWow}
+                            className="text-block-blur"
+                        >
+                            <div className="text-block">
+                             <h1 className="header-first-slide">{this.props.text.Header}</h1>
+                             <hr class="line-first-slide"></hr>
+                             
+                            </div>
+                       </div>
                         <div>
-                            <h1 className="hero-title">
-                                {this.getLangText("headerTitle")}
-                            </h1>
-                            <h2 className="subtitle">
-                                {this.getLangText("headerSubtitle")}
-                            </h2>
-                            
+                            <img
+                                className={mobileClasses}
+                                ref={this.mobileWow}
+                                src={image_1}
+                                className="image-block"
+                                alt="Mobile background"
+                            />
                         </div>
-
-                        <div className="button-started">
-                            <a
-                                className="get-started-button"
-                                href="#toGetStarted"
-                                onClick={e => {
-                                    this.anchorClick(e, "toGetStarted");
-                                }}
-                            >
-                                {this.getLangText("buttonStarted")}
-                            </a>
-                        </div>
-                        
                     </div>
-                </header>
+
 
                 <div className="container" id="toGetStarted">
                     <section
@@ -119,7 +116,7 @@ export default class Home extends React.Component {
                         <div className="first-slide">
                             <div className="img">
                                 <img
-                                    src={first_slide_1}
+                                    src={image_1}
                                     className={mobileClasses}
                                     ref={this.mobileWow}
                                     alt="EasyLang app"
@@ -132,7 +129,7 @@ export default class Home extends React.Component {
                     <div className="first-slide">
                             <div className="img">
                                 <img
-                                    src={first_slide_1}
+                                    src={image_1}
                                     className={mobileClasses}
                                     ref={this.mobileWow}
                                     alt="EasyLang app"

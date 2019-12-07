@@ -1,4 +1,41 @@
 .Home {
+    .first-slide-container {
+        display: flex;
+        position: relative;
+    }
+
+    .text-block-blur {
+        width: 45%;
+        height: 55%;
+        margin-top: 150px;
+        z-index: 1;
+        justify-content: start;
+        position: absolute;
+        backdrop-filter: blur(10px);
+    }
+
+    .image-block {
+        width: 70%;
+        z-index: auto;
+        float: right;
+        margin-left: 550px;
+        height: 85%;
+        position: relative;
+    }
+
+    .header-first-slide {
+        text-align: center;
+        padding-top: 10%;
+        padding-right: 7%;
+        font-size: 2.7rem;
+        padding-bottom: 30px;
+    }
+
+    .line-first-slide {
+        border: 2px solid #CA0B03;
+        width: 65%;
+    }
+
   
     background-size: 100%;
     .slick-slide {
@@ -149,26 +186,7 @@
         align-items: center;
     }
 
-    .img-phone {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 50%;
-    }
 
-    .img-phone .img-phone-front {
-        position: absolute;
-        width: 50%;
-        left: -120%;
-        transition: all 0.8s ease-in-out;
-        &.show {
-            left: 30%;
-        }
-    }
-    .img-phone .img-phone-back {
-        width: 100%;
-    }
 
     .content-description {
         flex-basis: 50%;
