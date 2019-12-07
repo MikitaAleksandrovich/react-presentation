@@ -1,11 +1,14 @@
 {
     "name": "Polski",
+    "home": "家",
+    "Installation": "Ustawienie",
+    "Equipment": "Sprzęt",
+    "Solution": "Decyzja",
+    "Scheme": "Schemat",
+    "Advantages": "Korzyści",
     "headerTitle": "Problem",
     "headerSubtitle": "Energia z paliw kopalnych jest marnowana. Strata następuje w końcowym punkcie konsumpcji",
     "buttonStarted": "Decyzja",
-
-
-    
     "headPleasure": "高兴地学习语言",
     "contentPleasure": "Netflix 和 Youtube 等任何来源都可以成为您的课程。 你只需找到自己喜欢的题目",
     "headMemory": "你所读过或看过的都是记忆的线索",

@@ -3,9 +3,11 @@ import "./Home.scss";
 import "./Home-media.scss";
 import ReactHtmlParser from "react-html-parser";
 import classNames from "classnames";
+import { Element } from 'react-scroll'
 
 import first_slide_1 from '../../assets/images/slide_1/slide_1_img_1.png';
 import first_slide_2 from '../../assets/images/slide_1/slide_1_img_2.png';
+
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -108,7 +110,7 @@ export default class Home extends React.Component {
                     </div>
                 </header>
 
-                <div className="container">
+                <div className="container" id="toGetStarted">
                     <section
                         className="content content-ourApp"
                         id={this.sections.toGetStarted.id}
@@ -126,6 +128,19 @@ export default class Home extends React.Component {
                          
                         </div>
                     </section>
+                    <Element id='example-destination' name='example-destination'>
+                    <div className="first-slide">
+                            <div className="img">
+                                <img
+                                    src={first_slide_1}
+                                    className={mobileClasses}
+                                    ref={this.mobileWow}
+                                    alt="EasyLang app"
+                                />
+                            </div>
+                         
+                        </div>
+      </Element>
 
 
                 </div>

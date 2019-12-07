@@ -3,17 +3,17 @@
   "name": "EasyLang",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Mask_Group_png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "icon128.png",
+      "src": "Mask_Group_png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "favicon-32x32.png",
+      "src": "Mask_Group_png",
       "type": "image/png",
       "sizes": "32x32"
     }
