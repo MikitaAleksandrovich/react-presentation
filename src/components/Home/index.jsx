@@ -8,6 +8,9 @@ import { Element } from 'react-scroll';
 
 import image_1 from '../../assets/images/home/image_1.jpg';
 import third_slide_image from '../../assets/images/home/third_slide_image.png';
+import box from '../../assets/images/home/3_4_screen/box.svg';
+import money from '../../assets/images/home/3_4_screen/money.svg';
+import volume from '../../assets/images/home/3_4_screen/volume.svg';
 
 
 export default class Home extends React.Component {
@@ -132,11 +135,18 @@ export default class Home extends React.Component {
                          </div>
                          <div className="third-text-block">
                             <h1 className="header-second-slide">{this.props.text.HeaderThirdSlide}</h1>
-                            <p>{this.props.text.TextSecondSlide_1}</p>
-                            <p>{this.props.text.TextSecondSlide_2}</p>
-                            <p>{this.props.text.TextSecondSlide_2}</p>
-                            <p>{this.props.text.TextSecondSlide_4}</p>
-                            <p>{this.props.text.TextSecondSlide_5}</p>
+                            <div className="third-block-prop"> 
+                                <img src={money}/>
+                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={box}/>
+                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={volume}/>
+                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            </div>
                          </div>
                     </section>
 

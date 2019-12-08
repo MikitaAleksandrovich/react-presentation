@@ -1,4 +1,6 @@
 
+    /* 1 Slide */
+    
     .first-slide-container {
         display: flex;
         position: relative;
@@ -59,6 +61,8 @@
         position: absolute;
     }
 
+    /* 2 Slide */
+
     .second-slide-container {
         display: flex;
         flex-wrap: wrap;
@@ -105,8 +109,7 @@
     .third-slide-container {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 20px;
-        height: 720px;
+        height: 650px;
     }
 
     .third-image-block {
@@ -133,18 +136,30 @@
         font-family: Yeseva One;
         font-size: 3.2rem;
         font-weight: 650;
-        padding-left: 10%;
+        padding-left: 15%;
         padding-right: 10%;
-        padding-top: 10%;
+        padding-top: 13%;
         text-align: left;
     }
 
-    .second-text-block p {
-        font-family: "Gotham Pro";
-        padding: 0 0 10% 20%;
-        max-width: 80%;
+    .third-block-prop {
+        display: flex;
+        padding-left: 12%;
+        padding-top: 5%;
+        
     }
 
+    .third-block-prop p {
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 25px;
+        padding-left: 10%;
+    }
+
+
+
+
+    /* 4 Slide */
 
 
 
