@@ -104,7 +104,7 @@ export default class Home extends React.Component {
                             className="text-block-blur"
                         >
                             <div className="text-block">
-                             <h1 className="header-first-slide">{this.props.text.HeaderFirstSlide}</h1>
+                             <h1>{this.props.text.HeaderFirstSlide}</h1>
                              <hr class="line-first-slide"></hr>
                             <p>{this.props.text.TextFirstSlide_1}</p>
                             <p>{this.props.text.TextFirstSlide_2}</p>
@@ -122,20 +122,22 @@ export default class Home extends React.Component {
                          <div className="red-block"></div>
                     </section>
 
-                    <section className="second-slide-container">
-                         <div className="second-red-block">
-                                <h1 className="header-second-slide">{this.props.text.HeaderSecondSlide}</h1>
-                         </div>
-                         <div className="second-text-block">
-                            <p>{this.props.text.TextSecondSlide_1}</p>
-                            <p>{this.props.text.TextSecondSlide_2}</p>
-                            <p>{this.props.text.TextSecondSlide_2}</p>
-                            <p>{this.props.text.TextSecondSlide_4}</p>
-                            <p>{this.props.text.TextSecondSlide_5}</p>
-                         </div>
-                    </section>
+                    <Element id="installation" name="installation">
+                        <section className="second-slide-container">
+                            <div className="second-red-block">
+                                    <h1 className="header-second-slide">{this.props.text.HeaderSecondSlide}</h1>
+                            </div>
+                            <div className="second-text-block">
+                                <p>{this.props.text.TextSecondSlide_1}</p>
+                                <p>{this.props.text.TextSecondSlide_2}</p>
+                                <p>{this.props.text.TextSecondSlide_2}</p>
+                                <p>{this.props.text.TextSecondSlide_4}</p>
+                                <p>{this.props.text.TextSecondSlide_5}</p>
+                            </div>
+                        </section>
+                    </Element>
 
-
+                    <Element id="equipment" name="equipment">
                     <section className="third-slide-container">
                          <div className="third-image-block">
                                 <img className="third-slide-image" 
@@ -158,6 +160,7 @@ export default class Home extends React.Component {
                             </div>
                          </div>
                     </section>
+                    </Element>
 
 
                     <section className="fourth-slide-container">
@@ -179,37 +182,39 @@ export default class Home extends React.Component {
                          </div>
                     </section>
 
-                    
-                    <section className="fifth-slide-container">
-                        <div className="fifth-image-block">
-                                <img
-                                     src={module}
-                                />
-                         </div>
-                         <div className="fifth-text-block">
-                            <h1>{this.props.text.HeaderFifthSlide}</h1>
-                         </div>
-                    </section>
-
-
-                    <section className="sixth-slide-container">
-                         <div className="sixth-text-block">
-                            <h1>{this.props.text.HeaderSixthSlide}</h1>
-                            <div className="sixth-block-prop"> 
-                                <p>{this.props.text.TextSixthSlide_1}</p>
+                    <Element id="solution" name="solution">
+                        <section className="fifth-slide-container">
+                            <div className="fifth-image-block">
+                                    <img
+                                        src={module}
+                                    />
                             </div>
-                            <div className="sixth-block-prop"> 
-                                <p>{this.props.text.TextSixthSlide_2}</p>
+                            <div className="fifth-text-block">
+                                <h1>{this.props.text.HeaderFifthSlide}</h1>
                             </div>
-                         </div>
-                         <div className="sixth-image-block">
-                                <img 
-                                     src={room}
-                                />
-                         </div>
-                    </section>
+                        </section>
+                    </Element>
 
+                    <Element id="scheme" name="scheme">
+                        <section className="sixth-slide-container">
+                            <div className="sixth-text-block">
+                                <h1>{this.props.text.HeaderSixthSlide}</h1>
+                                <div className="sixth-block-prop"> 
+                                    <p>{this.props.text.TextSixthSlide_1}</p>
+                                </div>
+                                <div className="sixth-block-prop"> 
+                                    <p>{this.props.text.TextSixthSlide_2}</p>
+                                </div>
+                            </div>
+                            <div className="sixth-image-block">
+                                    <img 
+                                        src={room}
+                                    />
+                            </div>
+                        </section>
+                    </Element>
 
+                    <Element id="advantages" name="advantages">
                     <section className="seventh-slide-container row">
                     <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
                                 <img src={energy} className="card-img-top" alt="energy" />
@@ -254,6 +259,7 @@ export default class Home extends React.Component {
                             </div>
                             </div>     
                     </section>
+                    </Element>
             </div>
         );
     }

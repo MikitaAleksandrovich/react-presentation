@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.scss";
 import classNames from "classnames";
-import { Link } from 'react-scroll'
-import logo from '../../assets/images/navbar/logo.png'
+import { Link } from 'react-scroll';
+import logo from '../../assets/images/navbar/logo.png';
 
 
 export default class Navbar extends React.Component {
@@ -97,7 +97,7 @@ export default class Navbar extends React.Component {
                                 </li>
                                 <li>
                                     <Link
-                                          to="example-destination" 
+                                          to="installation" 
                                           spy={true} 
                                           smooth={true} 
                                           duration={500} 
@@ -109,7 +109,7 @@ export default class Navbar extends React.Component {
                                 </li>
                                 <li>
                                     <Link
-                                          to="example-destination" 
+                                          to="equipment" 
                                           spy={true} 
                                           smooth={true} 
                                           duration={500} 
@@ -121,7 +121,7 @@ export default class Navbar extends React.Component {
                                 </li>
                                 <li>
                                     <Link
-                                          to="example-destination" 
+                                          to="solution" 
                                           spy={true} 
                                           smooth={true} 
                                           duration={500} 
@@ -133,7 +133,7 @@ export default class Navbar extends React.Component {
                                 </li>
                                 <li>
                                     <Link
-                                          to="example-destination" 
+                                          to="scheme" 
                                           spy={true} 
                                           smooth={true} 
                                           duration={500} 
@@ -145,7 +145,7 @@ export default class Navbar extends React.Component {
                                 </li>
                                 <li>
                                     <Link
-                                          to="example-destination" 
+                                          to="advantages" 
                                           spy={true} 
                                           smooth={true} 
                                           duration={500} 
