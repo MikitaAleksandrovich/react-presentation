@@ -8,9 +8,13 @@ import { Element } from 'react-scroll';
 
 import image_1 from '../../assets/images/home/image_1.jpg';
 import third_slide_image from '../../assets/images/home/third_slide_image.png';
+import brizer from '../../assets/images/home/brizer.png';
 import box from '../../assets/images/home/3_4_screen/box.svg';
 import money from '../../assets/images/home/3_4_screen/money.svg';
 import volume from '../../assets/images/home/3_4_screen/volume.svg';
+import kpd from '../../assets/images/home/3_4_screen/kpd.svg';
+import module from '../../assets/images/home/module.png';
+import room from '../../assets/images/home/room.jpg';
 
 
 export default class Home extends React.Component {
@@ -129,19 +133,18 @@ export default class Home extends React.Component {
                     <section className="third-slide-container">
                          <div className="third-image-block">
                                 <img className="third-slide-image" 
-                                src={third_slide_image}
+                                     src={third_slide_image}
                                 />
-
                          </div>
                          <div className="third-text-block">
                             <h1 className="header-second-slide">{this.props.text.HeaderThirdSlide}</h1>
                             <div className="third-block-prop"> 
                                 <img src={money}/>
-                                <p>{this.props.text.TextThirdSlide_3}</p>
+                                <p>{this.props.text.TextThirdSlide_1}</p>
                             </div>
                             <div className="third-block-prop"> 
                                 <img src={box}/>
-                                <p>{this.props.text.TextThirdSlide_3}</p>
+                                <p>{this.props.text.TextThirdSlide_2}</p>
                             </div>
                             <div className="third-block-prop"> 
                                 <img src={volume}/>
@@ -149,6 +152,86 @@ export default class Home extends React.Component {
                             </div>
                          </div>
                     </section>
+
+
+                    <section className="fourth-slide-container">
+                         <div className="third-text-block">
+                            <h1>{this.props.text.HeaderFourthSlide}</h1>
+                            <div className="fourth-block-prop"> 
+                                <img src={volume}/>
+                                <p>{this.props.text.TextFourthSlide_1}</p>
+                            </div>
+                            <div className="fourth-block-prop"> 
+                                <img src={kpd}/>
+                                <p>{this.props.text.TextFourthSlide_2}</p>
+                            </div>
+                         </div>
+                         <div className="fourth-image-block">
+                                <img 
+                                     src={brizer}
+                                />
+                         </div>
+                    </section>
+
+                    <section className="fifth-slide-container">
+                        <div className="fifth-image-block">
+                                <img
+                                     src={module}
+                                />
+                         </div>
+                         <div className="fifth-text-block">
+                            <h1>{this.props.text.HeaderFifthSlide}</h1>
+                         </div>
+                    </section>
+
+
+                    <section className="sixth-slide-container">
+                         <div className="sixth-text-block">
+                            <h1>{this.props.text.HeaderSixthSlide}</h1>
+                            <div className="sixth-block-prop"> 
+                                <p>{this.props.text.TextSixthSlide_1}</p>
+                            </div>
+                            <div className="sixth-block-prop"> 
+                                <p>{this.props.text.TextSixthSlide_2}</p>
+                            </div>
+                         </div>
+                         <div className="sixth-image-block">
+                                <img 
+                                     src={room}
+                                />
+                         </div>
+                    </section>
+
+
+                    <section className="seventh-slide-container">
+                        <div className="third-block-prop"> 
+                            <img src={money}/>
+                                <h1></h1>
+                                <p>{this.props.text.TextThirdSlide_1}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={box}/>
+                                <p>{this.props.text.TextThirdSlide_2}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={volume}/>
+                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                            <img src={money}/>
+                                <h1></h1>
+                                <p>{this.props.text.TextThirdSlide_1}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={box}/>
+                                <p>{this.props.text.TextThirdSlide_2}</p>
+                            </div>
+                            <div className="third-block-prop"> 
+                                <img src={volume}/>
+                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            </div>
+                    </section>
+
 
 
             </div>
