@@ -1,4 +1,4 @@
-.Home {
+
     .first-slide-container {
         display: flex;
         position: relative;
@@ -14,6 +14,15 @@
         backdrop-filter: blur(10px);
     }
 
+    .text-block-blur p {
+        font-size: 1rem;
+        padding-left: 30%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        max-width: 90%;
+        color: black;
+    }
+
     .image-block {
         width: 70%;
         z-index: auto;
@@ -26,21 +35,119 @@
     .header-first-slide {
         text-align: center;
         padding-top: 10%;
-        padding-right: 7%;
+        padding-right: 10%;
         font-size: 2.7rem;
         padding-bottom: 30px;
+        font-family: Yeseva One;
+        color: black;
     }
 
     .line-first-slide {
         border: 2px solid #CA0B03;
-        width: 65%;
+        width: 60%;
     }
 
-  
-    background-size: 100%;
-    .slick-slide {
-        height: auto !important;
+    .red-block {
+        width: 7%;
+        z-index: 2;
+        float: right;
+        background-color: #CA0B03;
+        margin-left: 550px;
+        height: 55%;
+        margin-top: 150px;
+        margin-left: 93%;
+        position: absolute;
     }
+
+    .second-slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: 720px;
+    }
+
+    .second-red-block {
+        width: 45%;
+        float: right;
+        background-color: #CA0B03;
+        height: 300px;
+    }
+
+    .second-red-block h1 {
+        color: #fff;
+        font-family: Yeseva One;
+        font-size: 3.2rem;
+        font-weight: 650;
+        padding-left: 30%;
+        padding-right: 10%;
+        padding-top: 10%;
+        text-align: right;
+    }
+
+    .second-text-block {
+        font-size: 1.3rem;
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+
+    .second-text-block p {
+        font-family: "Gotham Pro";
+        padding: 0 0 10% 20%;
+        max-width: 80%;
+    }
+
+
+
+
+    /* 3 Slide */
+
+    .third-slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: 720px;
+    }
+
+    .third-image-block {
+        width: 45%;
+        float: right;
+        height: 300px;
+    }
+
+    .third-image-block img {
+        width: 80%;
+        padding-top: 30%;
+        padding-left: 10%;
+    }
+
+    .third-text-block {
+        width: 55%;
+        float: right;
+        position: relative;
+        background-color: #0272A2;
+    }
+
+    .third-slide-container h1 {
+        color: #fff;
+        font-family: Yeseva One;
+        font-size: 3.2rem;
+        font-weight: 650;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10%;
+        text-align: left;
+    }
+
+    .second-text-block p {
+        font-family: "Gotham Pro";
+        padding: 0 0 10% 20%;
+        max-width: 80%;
+    }
+
+
+
+
 
     .slider {
         margin: 0 18%;
@@ -413,4 +520,4 @@
     .get-started-footer {
         padding-bottom: 3%;
     }
-}
+
