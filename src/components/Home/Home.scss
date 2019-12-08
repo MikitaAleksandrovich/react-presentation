@@ -305,57 +305,46 @@
 
 
     .seventh-slide-container {
-        margin-top: 30%;
+        margin-top: 25%;
         display: flex;
         flex-wrap: wrap;
         height: 650px;
         background-color: #0272A2;
     }
 
-    .fourth-image-block {
-        width: 50%;
-        float: right;
-        height: 300px;
+
+    .seventh-slide-card {
+        min-width: 150px;
+        min-height: 150px;
+        background-color: #0272A2;
+        padding: 4% 7%;
     }
 
-    .fourth-image-block img {
-        width: 95%;
-        padding-left: 10%;
-    }
-
-    .third-text-block {
-        width: 50%;
-        float: right;
-        position: relative;
-        background-color: #CA0B03;
-    }
-
-    .fourth-slide-container h1 {
+    .seventh-slide-card .card-body {
+        margin-top: 15px;
         color: #fff;
-        font-family: "Yeseva One";
-        font-size: 3.2rem;
-        font-weight: 650;
-        padding-left: 20%;
-        padding-right: 40%;
-        padding-top: 12%;
-        text-align: left;
+        width: 100%;
+        text-align: center;
     }
 
-    .fourth-block-prop {
-        display: flex;
-        padding-left: 20%;
-        padding-top: 8%;
-        
+    .seventh-slide-card .card-img-top {
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
-    .fourth-block-prop p {
+    .seventh-slide-card .card-title {
+        font-weight: bold;
         font-size: 1rem;
-        color: #fff;
-        padding-top: 25px;
-        padding-left: 10%;
-        padding-right: 20%;
+    
     }
 
+    .seventh-slide-card .card-text {
+        font-size: 0.9rem;
+        color: #fff;
+        font-weight: 100;
+    }
 
     
 

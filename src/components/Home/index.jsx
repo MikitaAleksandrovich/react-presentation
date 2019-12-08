@@ -15,6 +15,12 @@ import volume from '../../assets/images/home/3_4_screen/volume.svg';
 import kpd from '../../assets/images/home/3_4_screen/kpd.svg';
 import module from '../../assets/images/home/module.png';
 import room from '../../assets/images/home/room.jpg';
+import energy from '../../assets/images/home/7_screen/energy.svg';
+import like from '../../assets/images/home/7_screen/like.svg';
+import point1 from '../../assets/images/home/7_screen/point1.svg';
+import point2 from '../../assets/images/home/7_screen/point2.svg';
+import point3 from '../../assets/images/home/7_screen/point3.svg';
+import volume2 from '../../assets/images/home/7_screen/volume.svg';
 
 
 export default class Home extends React.Component {
@@ -173,6 +179,7 @@ export default class Home extends React.Component {
                          </div>
                     </section>
 
+                    
                     <section className="fifth-slide-container">
                         <div className="fifth-image-block">
                                 <img
@@ -203,37 +210,50 @@ export default class Home extends React.Component {
                     </section>
 
 
-                    <section className="seventh-slide-container">
-                        <div className="third-block-prop"> 
-                            <img src={money}/>
-                                <h1></h1>
-                                <p>{this.props.text.TextThirdSlide_1}</p>
+                    <section className="seventh-slide-container row">
+                    <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
+                                <img src={energy} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_1_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_1_Text}</p>
                             </div>
-                            <div className="third-block-prop"> 
-                                <img src={box}/>
-                                <p>{this.props.text.TextThirdSlide_2}</p>
                             </div>
-                            <div className="third-block-prop"> 
-                                <img src={volume}/>
-                                <p>{this.props.text.TextThirdSlide_3}</p>
+                            <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
+                                <img src={volume2} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_2_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_2_Text}</p>
                             </div>
-                            <div className="third-block-prop"> 
-                            <img src={money}/>
-                                <h1></h1>
-                                <p>{this.props.text.TextThirdSlide_1}</p>
                             </div>
-                            <div className="third-block-prop"> 
-                                <img src={box}/>
-                                <p>{this.props.text.TextThirdSlide_2}</p>
+                            <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
+                                <img src={point1} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_3_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_3_Text}</p>
                             </div>
-                            <div className="third-block-prop"> 
-                                <img src={volume}/>
-                                <p>{this.props.text.TextThirdSlide_3}</p>
                             </div>
+                            <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
+                                <img src={point2} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_4_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_4_Text}</p>
+                            </div>
+                            </div>
+                            <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
+                                <img src={point3} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_5_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_5_Text}</p>
+                            </div>
+                            </div>
+                            <div className="seventh-slide-card col-lg-4 ">
+                                <img src={like} className="card-img-top" alt="energy" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{this.props.text.Card_6_Title}</h5>
+                                    <p className="card-text">{this.props.text.Card_6_Text}</p>
+                            </div>
+                            </div>     
                     </section>
-
-
-
             </div>
         );
     }
