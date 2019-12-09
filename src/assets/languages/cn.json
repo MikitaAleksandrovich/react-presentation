@@ -1,6 +1,6 @@
 {
     "name": "Polski",
-    "home": "家",
+    "home": "Home",
     "Installation": "Ustawienie",
     "Equipment": "Sprzęt",
     "Solution": "Decyzja",
@@ -37,42 +37,5 @@
     "Card_5_Title": "Punkt wyjścia",
     "Card_5_Text": "systemy rozmieszczone zewnętrznie na duże odległości",
     "Card_6_Title": "Nie wymagane",
-    "Card_6_Text": "wewnętrzne otwory w ścianach",
-	
-	
-	
-	
-	
-	
-    "headerTitle": "Problem",
-    "headerSubtitle": "Energia z paliw kopalnych jest marnowana. Strata następuje w końcowym punkcie konsumpcji",
-    "buttonStarted": "Decyzja",
-    "headPleasure": "高兴地学习语言",
-    "contentPleasure": "Netflix 和 Youtube 等任何来源都可以成为您的课程。 你只需找到自己喜欢的题目",
-    "headMemory": "你所读过或看过的都是记忆的线索",
-    "contentMemory": "EasyLang应用的训练基于您以前学过的材料.",
-    "headOurApp": "<span> EasyLang.app </span> <sup> BETA </sup>",
-    "contentOurApp": "EasyLang 是 <a class=\"openSoftware\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Free_and_open-source_software\" id=\"openSource\">自由及开放源代码软件</a> 开始免费试用",
-    "extension": "Chrome 扩展程序",
-    "extensionGuide": "安装指南",
-    "headHowItWorks": "我们的应用怎么运作?",
-    "sliderCaptionFirst": "播放视频",
-    "sliderCaptionSecond": "点击 \"A\"(加 Add) 按钮",
-    "slideThird": "slide3cn",
-    "slideFourth": "slide4cn",
-    "blog": "获得更多信息欢迎来看",
-    "Blog": "我们的博客",
-    "headSource": "学习的来源是什么？",
-    "contentSource": "这里你会发现一些想法",
-    "music": "音乐",
-    "musicParagraph": "了解你最喜爱的歌曲的意思",
-    "news": "新闻",
-    "newsParagraph": "典看新闻而不查词",
-    "video": "视频",
-    "videoParagraph": "关注YouTube和其他频道上的新博主",
-    "book": "图书",
-    "bookParagraph": "开始读原的文书",
-    "movie": "电影",
-    "movieParagraph": "聆听您最喜爱电影的原文",
-    "getStarted": "开始吧"
+    "Card_6_Text": "wewnętrzne otwory w ścianach"
 }
