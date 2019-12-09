@@ -1,7 +1,7 @@
 {
     "name": "modularrecuperator",
     "version": "0.1.1",
-    "homepage": "https://easylang.app",
+    "homepage": "./",
     "private": true,
     "dependencies": {
         "@babel/core": "7.6.0",

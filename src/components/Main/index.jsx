@@ -1,5 +1,5 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from "../Navbar";
 import Home from "../Home";
 import BtnTop from "../BtnTop";
@@ -10,13 +10,7 @@ import Footer from "../Footer";
 
 export default class App extends React.Component {
   render() {
-    if (typeof window.gtag === "function") {
-      window.gtag("config", "UA-4027447-9", {
-        page_title: document.title,
-        page_location: this.props.location.href,
-        page_path: this.props.location.pathname + this.props.location.search
-      });
-    }
+
     return (
       <div className="Main">
         <Helmet htmlAttributes={{ lang: this.props.language }} />
@@ -26,12 +20,7 @@ export default class App extends React.Component {
           handleLanguage={this.props.handleLanguage}
           text={this.props.text}
         ></Navbar>
-        <Router>
-          <ScrollToTop path="/">
-            <Home path="/" text={this.props.text}></Home>
-            <NotFound default></NotFound>
-          </ScrollToTop>
-        </Router>
+        <Home text={this.props.text}></Home>
         <BtnTop></BtnTop>
       </div>
     );

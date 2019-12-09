@@ -13,7 +13,7 @@ import box from '../../assets/images/home/3_4_screen/box.svg';
 import money from '../../assets/images/home/3_4_screen/money.svg';
 import volume from '../../assets/images/home/3_4_screen/volume.svg';
 import kpd from '../../assets/images/home/3_4_screen/kpd.svg';
-import module from '../../assets/images/home/module.png';
+import modular from '../../assets/images/home/module.png';
 import room from '../../assets/images/home/room.jpg';
 import energy from '../../assets/images/home/7_screen/energy.svg';
 import like from '../../assets/images/home/7_screen/like.svg';
@@ -105,7 +105,7 @@ export default class Home extends React.Component {
                         >
                             <div className="text-block">
                              <h1>{this.props.text.HeaderFirstSlide}</h1>
-                             <hr class="line-first-slide"></hr>
+                             <hr className="line-first-slide"></hr>
                             <p>{this.props.text.TextFirstSlide_1}</p>
                             <p>{this.props.text.TextFirstSlide_2}</p>
                             </div>
@@ -142,20 +142,21 @@ export default class Home extends React.Component {
                          <div className="third-image-block">
                                 <img className="third-slide-image" 
                                      src={third_slide_image}
+                                     alt="third-slide-image"
                                 />
                          </div>
                          <div className="third-text-block">
                             <h1 className="header-second-slide">{this.props.text.HeaderThirdSlide}</h1>
                             <div className="third-block-prop"> 
-                                <img src={money}/>
+                                <img src={money} alt="money-icon"/>
                                 <p>{this.props.text.TextThirdSlide_1}</p>
                             </div>
                             <div className="third-block-prop"> 
-                                <img src={box}/>
+                                <img src={box} alt="box-icon"/>
                                 <p>{this.props.text.TextThirdSlide_2}</p>
                             </div>
                             <div className="third-block-prop"> 
-                                <img src={volume}/>
+                                <img src={volume} alt="volume-icon"/>
                                 <p>{this.props.text.TextThirdSlide_3}</p>
                             </div>
                          </div>
@@ -167,17 +168,18 @@ export default class Home extends React.Component {
                          <div className="third-text-block">
                             <h1>{this.props.text.HeaderFourthSlide}</h1>
                             <div className="fourth-block-prop"> 
-                                <img src={volume}/>
+                                <img src={volume} alt="volume-icon"/>
                                 <p>{this.props.text.TextFourthSlide_1}</p>
                             </div>
                             <div className="fourth-block-prop"> 
-                                <img src={kpd}/>
+                                <img src={kpd} alt="kpd-icon"/>
                                 <p>{this.props.text.TextFourthSlide_2}</p>
                             </div>
                          </div>
                          <div className="fourth-image-block">
                                 <img 
                                      src={brizer}
+                                     alt="brizer-icon"
                                 />
                          </div>
                     </section>
@@ -186,7 +188,9 @@ export default class Home extends React.Component {
                         <section className="fifth-slide-container">
                             <div className="fifth-image-block">
                                     <img
-                                        src={module}
+                                        src={modular}
+                                        alt="modular"
+
                                     />
                             </div>
                             <div className="fifth-text-block">
@@ -209,6 +213,7 @@ export default class Home extends React.Component {
                             <div className="sixth-image-block">
                                     <img 
                                         src={room}
+                                        alt="room"
                                     />
                             </div>
                         </section>

@@ -6,7 +6,7 @@ import {
 import "./App.scss";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
-import languageCn from "../../assets/languages/cn.json";
+import languagePl from "../../assets/languages/pl.json";
 import Main from "../Main";
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
     this.langStore = {
       en: languageEn,
       ru: languageRu,
-      cn: languageCn
+      pl: languagePl
     };
   }
   getUserLanguageFromInputList() {
