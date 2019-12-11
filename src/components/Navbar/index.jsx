@@ -70,18 +70,6 @@ export default class Navbar extends React.Component {
                         <img className="logo" src={logo}/>
                     </Link>
                 </div>
-                <div className="lang">
-                    <form>
-                        <select
-                            name="changeLang"
-                            id="getLang"
-                            value={this.props.curLang}
-                            onChange={this.changeLocale}
-                        >
-                            {langList}
-                        </select>
-                    </form>
-                </div>
                 <div className="menu-wrapper">
                     <div className="menu-block">
                         <div className={menuMainClass}>

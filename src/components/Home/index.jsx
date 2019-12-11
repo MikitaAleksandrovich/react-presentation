@@ -12,7 +12,7 @@ import brizer from '../../assets/images/home/brizer.png';
 import box from '../../assets/images/home/3_4_screen/box.svg';
 import money from '../../assets/images/home/3_4_screen/money.svg';
 import volume from '../../assets/images/home/3_4_screen/volume.svg';
-import kpd from '../../assets/images/home/3_4_screen/kpd.svg';
+import kpd_1 from '../../assets/images/home/3_4_screen/kpd-1.svg';
 import modular from '../../assets/images/home/module.png';
 import room from '../../assets/images/home/room.jpg';
 import energy from '../../assets/images/home/7_screen/energy.svg';
@@ -21,6 +21,8 @@ import point1 from '../../assets/images/home/7_screen/point1.svg';
 import point2 from '../../assets/images/home/7_screen/point2.svg';
 import point3 from '../../assets/images/home/7_screen/point3.svg';
 import volume2 from '../../assets/images/home/7_screen/volume.svg';
+import phone from '../../assets/images/home/footer/phone.svg';
+import mail from '../../assets/images/home/footer/mail.svg';
 
 
 export default class Home extends React.Component {
@@ -130,7 +132,7 @@ export default class Home extends React.Component {
                             <div className="second-text-block">
                                 <p>{this.props.text.TextSecondSlide_1}</p>
                                 <p>{this.props.text.TextSecondSlide_2}</p>
-                                <p>{this.props.text.TextSecondSlide_2}</p>
+                                <p>{this.props.text.TextSecondSlide_3}</p>
                                 <p>{this.props.text.TextSecondSlide_4}</p>
                                 <p>{this.props.text.TextSecondSlide_5}</p>
                             </div>
@@ -172,7 +174,7 @@ export default class Home extends React.Component {
                                 <p>{this.props.text.TextFourthSlide_1}</p>
                             </div>
                             <div className="fourth-block-prop"> 
-                                <img src={kpd} alt="kpd-icon"/>
+                                <img src={kpd_1} alt="kpd-icon"/>
                                 <p>{this.props.text.TextFourthSlide_2}</p>
                             </div>
                          </div>
@@ -185,16 +187,18 @@ export default class Home extends React.Component {
                     </section>
 
                     <Element id="solution" name="solution">
-                        <section className="fifth-slide-container">
-                            <div className="fifth-image-block">
-                                    <img
-                                        src={modular}
-                                        alt="modular"
+                        <section className="fifth-slide-container row">
+                            <div className="row">
+                                <div className="fifth-image-block col-md-6 col-sm">
+                                        <img
+                                            src={modular}
+                                            alt="modular"
 
-                                    />
-                            </div>
-                            <div className="fifth-text-block">
-                                <h1>{this.props.text.HeaderFifthSlide}</h1>
+                                        />
+                                </div>
+                                <div className="fifth-text-block col-md-6 col-sm">
+                                    <h1>{this.props.text.HeaderFifthSlide}</h1>
+                                </div>
                             </div>
                         </section>
                     </Element>
@@ -203,12 +207,6 @@ export default class Home extends React.Component {
                         <section className="sixth-slide-container">
                             <div className="sixth-text-block">
                                 <h1>{this.props.text.HeaderSixthSlide}</h1>
-                                <div className="sixth-block-prop"> 
-                                    <p>{this.props.text.TextSixthSlide_1}</p>
-                                </div>
-                                <div className="sixth-block-prop"> 
-                                    <p>{this.props.text.TextSixthSlide_2}</p>
-                                </div>
                             </div>
                             <div className="sixth-image-block">
                                     <img 
@@ -256,7 +254,7 @@ export default class Home extends React.Component {
                                     <p className="card-text">{this.props.text.Card_5_Text}</p>
                             </div>
                             </div>
-                            <div className="seventh-slide-card col-lg-4 ">
+                            <div className="seventh-slide-card col-lg-4 col-md-6 col-sm">
                                 <img src={like} className="card-img-top" alt="energy" />
                                 <div className="card-body">
                                     <h5 className="card-title">{this.props.text.Card_6_Title}</h5>
@@ -265,6 +263,26 @@ export default class Home extends React.Component {
                             </div>     
                     </section>
                     </Element>
+
+
+
+                    <div className="footer row">
+                        <div className="col-lg-4 info">
+                            <span>Siarhei Fedarenka</span>
+                        </div>
+                        <div className="col-lg-4 info">
+                            <img src={phone}/>
+                            <span>+375 29 767 3525</span>
+                        </div>
+                        <div className="col-lg-4 info">
+                            <img src={mail}/>
+                            <span>sergeifedorenkon@gmail.com</span>
+                        </div>
+     
+                        
+        
+                    </div>
+         
             </div>
         );
     }

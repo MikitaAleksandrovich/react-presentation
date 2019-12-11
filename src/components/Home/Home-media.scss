@@ -2,9 +2,441 @@
     .Home .container {
         margin: 0 20%;
     }
+
+    .second-red-block h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 2.3rem;
+        font-weight: 650;
+        padding-left: 30%;
+        padding-right: 10%;
+        padding-top: 15%;
+        text-align: right;
+    }
+
+    .sixth-slide-container h1 {
+        color: #CA0B03;
+        font-family: "Yeseva One";
+        font-size: 2.5rem;
+        font-weight: 650;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: left;
+    }
+
 }
+
+
+@media (max-width: 1550px) {
+    .Home .container {
+        margin: 0 20%;
+    }
+
+    .first-slide-container {
+        display: flex;
+        position: relative;
+        height: 90%;
+    }
+
+    .image-block {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-block-blur {
+        width: 60%;
+        height: 60%;
+        margin-top: 50px;
+    }
+
+    .red-block {
+        width: 7%;
+        z-index: 2;
+        float: right;
+        background-color: #CA0B03;
+        margin-left: 550px;
+        height: 60%;
+        margin-top: 50px;
+        margin-left: 93%;
+        position: absolute;
+    }
+
+                 /* 5 slide */
+
+                 .fifth-slide-container {
+                    margin: 5% 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 330px;
+                }
+            
+                .fifth-image-block {
+                    width: 50%;
+                    float: right;
+                    height: 250px;
+                }
+            
+                .fifth-image-block img {
+                    width: 110%;
+                    padding-left: 20%;
+                    padding-top: 10%;
+                }
+            
+                .fifth-text-block {
+                    width: 40%;
+                    float: left;
+                }
+            
+                .fifth-text-block h1 {
+                    color: #CA0B03;
+                    font-family: "Yeseva One";
+                    font-size: 1.8rem;
+                    font-weight: 650;
+                    padding-top: 5%;
+                    text-align: left;
+                    padding-right: 10px;
+                    padding-left: 25%;
+                }
+
+             /* 6 Slide */
+
+        .sixth-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .sixth-image-block {
+            width: 60%;
+            float: right;
+        }
+    
+        .sixth-image-block img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .sixth-text-block {
+            width: 40%;
+            float: right;
+            position: relative;
+        }
+
+        .sixth-slide-container h1 {
+            color: #CA0B03;
+            font-family: "Yeseva One";
+            font-size: 2.5rem;
+            font-weight: 650;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: left;
+        }
+
+
+        /* 2 Slide */
+
+        .second-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .second-red-block {
+            width: 45%;
+            float: right;
+            background-color: #CA0B03;
+            height: 100%;
+            font-size: 1.4rem;
+        }
+    
+        .second-red-block h1 {
+            color: #fff;
+            font-family: "Yeseva One";
+            font-size: 1.4rem;
+            font-weight: 650;
+            padding-left: 20%;
+            padding-right: 10%;
+            padding-top: 13%;
+            text-align: right;
+        }
+    
+        .second-text-block {
+            font-size: 1.3rem;
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+    
+        .second-text-block p {
+            padding: 0% 5% 5% 15%;
+            max-width: 80%;
+        }
+
+        
+
+
+
+}
+
+
 @media (max-width: 1024px) {
     .Home {
+
+        .first-slide-container {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+
+        .image-block {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-block-blur {
+            width: 60%;
+            height: 60%;
+            margin-top: 50px;
+        }
+
+        .red-block {
+            width: 7%;
+            z-index: 2;
+            float: right;
+            background-color: #CA0B03;
+            margin-left: 550px;
+            height: 60%;
+            margin-top: 50px;
+            margin-left: 93%;
+            position: absolute;
+        }
+
+
+             /* 5 slide */
+
+             .fifth-slide-container {
+                margin: 5% 0;
+                display: flex;
+                flex-wrap: wrap;
+                height: 330px;
+            }
+        
+            .fifth-image-block {
+                width: 50%;
+                float: right;
+                height: 250px;
+            }
+        
+            .fifth-image-block img {
+                width: 110%;
+                padding-left: 20%;
+                padding-top: 10%;
+            }
+        
+            .fifth-text-block {
+                width: 50%;
+                float: left;
+            }
+        
+            .fifth-text-block h1 {
+                color: #CA0B03;
+                font-family: "Yeseva One";
+                font-size: 2.5rem;
+                font-weight: 650;
+                padding-top: 5%;
+                text-align: left;
+                padding-right: 10px;
+                padding-left: 20%;
+            }
+
+
+
+             /* 6 Slide */
+
+        .sixth-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .sixth-image-block {
+            width: 50%;
+            float: right;
+        }
+    
+        .sixth-image-block img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .sixth-text-block {
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+
+        .sixth-slide-container h1 {
+            color: #CA0B03;
+            font-family: "Yeseva One";
+            font-size: 2.5rem;
+            font-weight: 650;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: left;
+        }
+
+        
+        /* 2 Slide */
+
+        .second-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .second-red-block {
+            width: 45%;
+            float: right;
+            background-color: #CA0B03;
+            height: 300px;
+        }
+    
+        .second-red-block h1 {
+            color: #fff;
+            font-family: "Yeseva One";
+            font-size: 2.5rem;
+            font-weight: 650;
+            padding-left: 20%;
+            padding-right: 10%;
+            padding-top: 13%;
+            text-align: right;
+        }
+    
+        .second-text-block {
+            font-size: 1.3rem;
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+    
+        .second-text-block p {
+            padding: 3% 5% 10% 15%;
+            max-width: 80%;
+        }
+
+
+                            /* 3 Slide */
+
+    .third-slide-container {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .third-image-block {
+        width: 50%;
+        float: right;
+        height: 300px;
+    }
+
+    .third-image-block img {
+        width: 80%;
+        padding-top: 35%;
+        padding-left: 10%;
+    }
+
+    .third-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+        background-color: #CA0B03;
+    }
+
+    .third-slide-container h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 2rem;
+        font-weight: 650;
+        padding-left: 15%;
+        padding-right: 10%;
+        padding-top: 13%;
+        text-align: left;
+    }
+
+    .third-block-prop {
+        display: flex;
+        padding-left: 12%;
+        padding-top: 10%;
+    }
+
+    .third-block-prop img {
+        width: 25%;
+    }
+
+    .third-block-prop p {
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 25px;
+        padding-left: 10%;
+    }
+
+        /* 4 Slide */
+
+        .fourth-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .fourth-image-block {
+            width: 50%;
+            float: right;
+        }
+    
+        .fourth-image-block img {
+            width: 75%;
+            padding-left: 10%;
+        }
+    
+        .third-text-block {
+            width: 50%;
+            float: right;
+            position: relative;
+            background-color: #CA0B03;
+        }
+    
+        .fourth-slide-container h1 {
+            color: #fff;
+            font-family: "Yeseva One";
+            font-size: 1.7rem;
+            font-weight: 650;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 12%;
+            text-align: left;
+        }
+    
+        .fourth-block-prop {
+            display: flex;
+            padding-left: 20%;
+            padding-top: 8%;
+        }
+    
+         .fourth-block-prop img {
+            width: 20%;
+        }
+    
+        .fourth-block-prop p {
+            font-size: 0.9rem;
+            color: #fff;
+            padding-top: 15px;
+            padding-left: 10%;
+            padding-right: 20%;
+        }
+    
+    
+
         .button-started {
             width: 220px;
         }
@@ -34,6 +466,346 @@
 
 @media (max-width: 768px) {
     .Home {
+
+        /* 1 Slide */
+
+        .first-slide-container {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+
+        .image-block {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-block-blur {
+            width: 60%;
+            height: 60%;
+            margin-top: 50px;
+        }
+
+        .red-block {
+            width: 7%;
+            z-index: 2;
+            float: right;
+            background-color: #CA0B03;
+            margin-left: 550px;
+            height: 60%;
+            margin-top: 50px;
+            margin-left: 93%;
+            position: absolute;
+        }
+
+          /* 5 slide */
+
+          .fifth-slide-container {
+            margin: 5% 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+        }
+    
+        .fifth-image-block {
+            width: 50%;
+            float: right;
+            height: 250px;
+        }
+    
+        .fifth-image-block img {
+            width: 110%;
+            padding-left: 20%;
+            padding-top: 20%;
+        }
+    
+        .fifth-text-block {
+            width: 50%;
+            float: left;
+        }
+    
+        .fifth-text-block h1 {
+            color: #CA0B03;
+            font-family: "Yeseva One";
+            font-size: 2.5rem;
+            font-weight: 650;
+            padding-top: 5%;
+            text-align: left;
+            padding-right: 10px;
+            padding-left: 20%;
+        }
+
+        /* 6 Slide */
+
+        .sixth-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .sixth-image-block {
+            width: 50%;
+            float: right;
+        }
+    
+        .sixth-image-block img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .sixth-text-block {
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+
+        .sixth-slide-container h1 {
+            color: #CA0B03;
+            font-family: "Yeseva One";
+            font-size: 2.5rem;
+            font-weight: 650;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: left;
+        }
+
+
+                /* 2 Slide */
+
+                .second-slide-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 100%;
+                }
+            
+                .second-red-block {
+                    width: 45%;
+                    float: right;
+                    background-color: #CA0B03;
+                    height: 250px;
+                }
+            
+                .second-red-block h1 {
+                    color: #fff;
+                    font-family: "Yeseva One";
+                    font-size: 2.3rem;
+                    font-weight: 650;
+                    padding-left: 20%;
+                    padding-right: 10%;
+                    padding-top: 13%;
+                    text-align: right;
+                }
+            
+                .second-text-block {
+                    font-size: 1.3rem;
+                    width: 50%;
+                    float: right;
+                    position: relative;
+                }
+            
+                .second-text-block p {
+                    padding: 3% 5% 10% 15%;
+                    max-width: 80%;
+                }
+            
+        
+                .button-started {
+                    width: 220px;
+                }
+        
+                .button-started .get-started-button2 {
+                    padding: 10px 0;
+                }
+        
+                .button-group {
+                    width: 100%;
+                }
+        
+                .sources-wrapper,
+                .sources-block {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+        
+                .sources-title {
+                    flex-basis: 100%;
+                    text-align: center;
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+
+
+                    /* 3 Slide */
+
+    .third-slide-container {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .third-image-block {
+        width: 50%;
+        float: right;
+        height: 300px;
+    }
+
+    .third-image-block img {
+        width: 80%;
+        padding-top: 45%;
+        padding-left: 10%;
+    }
+
+    .third-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+        background-color: #CA0B03;
+    }
+
+    .third-slide-container h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 2rem;
+        font-weight: 650;
+        padding-left: 15%;
+        padding-right: 10%;
+        padding-top: 13%;
+        text-align: left;
+    }
+
+    .third-block-prop {
+        display: flex;
+        padding-left: 12%;
+        padding-top: 10%;
+    }
+
+    .third-block-prop img {
+        width: 25%;
+    }
+
+    .third-block-prop p {
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 25px;
+        padding-left: 10%;
+    }
+
+
+
+        /* 4 Slide */
+
+        .fourth-slide-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    
+        .fourth-image-block {
+            width: 50%;
+            float: right;
+        }
+    
+        .fourth-image-block img {
+            width: 95%;
+            padding-left: 10%;
+        }
+    
+        .third-text-block {
+            width: 50%;
+            float: right;
+            position: relative;
+            background-color: #CA0B03;
+        }
+    
+        .fourth-slide-container h1 {
+            color: #fff;
+            font-family: "Yeseva One";
+            font-size: 1.7rem;
+            font-weight: 650;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 12%;
+            text-align: left;
+        }
+    
+        .fourth-block-prop {
+            display: flex;
+            padding-left: 20%;
+            padding-top: 8%;
+        }
+    
+         .fourth-block-prop img {
+            width: 20%;
+        }
+    
+        .fourth-block-prop p {
+            font-size: 0.9rem;
+            color: #fff;
+            padding-top: 15px;
+            padding-left: 10%;
+            padding-right: 20%;
+        }
+    
+
+            /* 4 Slide */
+
+    .fourth-slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .fourth-image-block {
+        width: 50%;
+        float: right;
+    }
+
+    .fourth-image-block img {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .third-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+        background-color: #CA0B03;
+    }
+
+    .fourth-slide-container h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 1.7rem;
+        font-weight: 650;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 12%;
+        text-align: left;
+    }
+
+    .fourth-block-prop {
+        display: flex;
+        padding-left: 20%;
+        padding-top: 8%;
+    }
+
+     .fourth-block-prop img {
+        width: 20%;
+    }
+
+    .fourth-block-prop p {
+        font-size: 0.9rem;
+        color: #fff;
+        padding-top: 15px;
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+
+
+        
+
+
         .app-download-wrapper {
             flex-wrap: wrap;
             justify-content: center;
@@ -90,6 +862,282 @@
 
 @media (max-width: 610px) {
     .Home {
+
+        .first-slide-container {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+
+        .image-block {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-block-blur {
+            width: 60%;
+            height: 60%;
+            margin-top: 50px;
+        }
+
+        .red-block {
+            width: 7%;
+            z-index: 2;
+            float: right;
+            background-color: #CA0B03;
+            margin-left: 550px;
+            height: 60%;
+            margin-top: 50px;
+            margin-left: 93%;
+            position: absolute;
+        }
+
+
+        /* 5 slide */
+
+        .fifth-slide-container {
+            margin: 5% 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 250px;
+        }
+    
+        .fifth-image-block {
+            width: 50%;
+            float: right;
+            height: 250px;
+        }
+    
+        .fifth-image-block img {
+            width: 110%;
+            padding-left: 20%;
+            padding-top: 25%;
+        }
+    
+        .fifth-text-block {
+            width: 50%;
+            float: left;
+        }
+    
+        .fifth-text-block h1 {
+            color: #CA0B03;
+            font-family: "Yeseva One";
+            font-size: 2.3rem;
+            font-weight: 650;
+            padding-top: 5%;
+            text-align: left;
+            padding-right: 10px;
+            padding-left: 20%;
+        }
+
+
+            /* 6 Slide */
+
+    .sixth-slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .sixth-image-block {
+        width: 50%;
+        float: right;
+    }
+
+    .sixth-image-block img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sixth-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+
+    .sixth-slide-container h1 {
+        color: #CA0B03;
+        font-family: "Yeseva One";
+        font-size: 2rem;
+        font-weight: 650;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: left;
+    }
+
+    .sixth-block-prop {
+        display: flex;
+        padding-left: 20%; 
+    }
+
+    .sixth-block-prop p {
+        font-size: 1rem;
+        color: black;
+        padding-top: 25px;
+        padding-left: 10%;
+        padding-right: 25%;
+        padding-bottom: 20px;
+    }
+
+
+
+                /* 2 Slide */
+
+                .second-slide-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 100%;
+                }
+            
+                .second-red-block {
+                    width: 45%;
+                    float: right;
+                    background-color: #CA0B03;
+                    height: 200px;
+                }
+            
+                .second-red-block h1 {
+                    color: #fff;
+                    font-family: "Yeseva One";
+                    font-size: 2rem;
+                    font-weight: 650;
+                    padding-left: 20%;
+                    padding-right: 10%;
+                    padding-top: 13%;
+                    text-align: right;
+                }
+            
+                .second-text-block {
+                    font-size: 1.3rem;
+                    width: 50%;
+                    float: right;
+                    position: relative;
+                }
+            
+                .second-text-block p {
+                    padding: 3% 5% 10% 15%;
+                    max-width: 80%;
+                }
+
+
+    /* 3 Slide */
+
+    .third-slide-container {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .third-image-block {
+        width: 50%;
+        float: right;
+        height: 300px;
+    }
+
+    .third-image-block img {
+        width: 80%;
+        padding-top: 55%;
+        padding-left: 15%;
+    }
+
+    .third-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+        background-color: #CA0B03;
+    }
+
+    .third-slide-container h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 2.5rem;
+        font-weight: 650;
+        padding-left: 15%;
+        padding-right: 10%;
+        padding-top: 13%;
+        text-align: left;
+    }
+
+    .third-block-prop {
+        display: flex;
+        padding-left: 12%;
+        padding-top: 10%;
+    }
+
+    .third-block-prop img {
+        width: 30%;
+    }
+
+    .third-block-prop p {
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 25px;
+        padding-left: 10%;
+    }
+
+
+    
+
+    /* 4 Slide */
+
+    .fourth-slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .fourth-image-block {
+        width: 50%;
+        float: right;
+    }
+
+    .fourth-image-block img {
+        width: 95%;
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    .third-text-block {
+        width: 50%;
+        float: right;
+        position: relative;
+        background-color: #CA0B03;
+    }
+
+    .fourth-slide-container h1 {
+        color: #fff;
+        font-family: "Yeseva One";
+        font-size: 1.7rem;
+        font-weight: 650;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 12%;
+        text-align: left;
+    }
+
+    .fourth-block-prop {
+        display: flex;
+        padding-left: 20%;
+        padding-top: 8%;
+    }
+
+     .fourth-block-prop img {
+        width: 20%;
+    }
+
+    .fourth-block-prop p {
+        font-size: 0.9rem;
+        color: #fff;
+        padding-top: 15px;
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+
+    
+
+
+
         h1.hero-title {
             font-size: 2rem;
             line-height: 2rem;
