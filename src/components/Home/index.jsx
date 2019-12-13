@@ -25,6 +25,7 @@ import eye from '../../assets/images/home/footer/eye.png';
 import breather from '../../assets/images/home/breather.jpg';
 import city from '../../assets/images/home/city.jpg';
 import recuperation from '../../assets/images/home/recuperation.jpg';
+import fon from '../../assets/images/home/fon.jpg';
 
 
 export default class Home extends React.Component {
