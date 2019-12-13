@@ -7,8 +7,6 @@ import { Element } from 'react-scroll';
 
 
 import image_1 from '../../assets/images/home/image_1.jpg';
-import third_slide_image from '../../assets/images/home/third_slide_image.png';
-import brizer from '../../assets/images/home/brizer.png';
 import box from '../../assets/images/home/3_4_screen/box.svg';
 import money from '../../assets/images/home/3_4_screen/money.svg';
 import volume from '../../assets/images/home/3_4_screen/volume.svg';
@@ -23,6 +21,10 @@ import point3 from '../../assets/images/home/7_screen/point3.svg';
 import volume2 from '../../assets/images/home/7_screen/volume.svg';
 import phone from '../../assets/images/home/footer/phone.svg';
 import mail from '../../assets/images/home/footer/mail.svg';
+import eye from '../../assets/images/home/footer/eye.png';
+import breather from '../../assets/images/home/breather.jpg';
+import city from '../../assets/images/home/city.jpg';
+import recuperation from '../../assets/images/home/recuperation.jpg';
 
 
 export default class Home extends React.Component {
@@ -126,8 +128,10 @@ export default class Home extends React.Component {
 
                     <Element id="installation" name="installation">
                         <section className="second-slide-container">
-                            <div className="second-red-block">
+                            <div className="second-left-block">
+                                <div className="second-red-block">
                                     <h1 className="header-second-slide">{this.props.text.HeaderSecondSlide}</h1>
+                                </div>
                             </div>
                             <div className="second-text-block">
                                 <p>{this.props.text.TextSecondSlide_1}</p>
@@ -143,7 +147,7 @@ export default class Home extends React.Component {
                     <section className="third-slide-container">
                          <div className="third-image-block">
                                 <img className="third-slide-image" 
-                                     src={third_slide_image}
+                                     src={recuperation}
                                      alt="third-slide-image"
                                 />
                          </div>
@@ -167,7 +171,7 @@ export default class Home extends React.Component {
 
 
                     <section className="fourth-slide-container">
-                         <div className="third-text-block">
+                         <div className="fourth-text-block">
                             <h1>{this.props.text.HeaderFourthSlide}</h1>
                             <div className="fourth-block-prop"> 
                                 <img src={volume} alt="volume-icon"/>
@@ -180,7 +184,7 @@ export default class Home extends React.Component {
                          </div>
                          <div className="fourth-image-block">
                                 <img 
-                                     src={brizer}
+                                     src={breather}
                                      alt="brizer-icon"
                                 />
                          </div>
@@ -266,7 +270,15 @@ export default class Home extends React.Component {
 
 
 
-                    <div className="footer row">
+                    <div className="footer">
+                         <div className="info">
+                            <img src={eye}/>
+                            <a href="https://drive.google.com/file/d/1QcCUyz7nxYyIMjFPGotV4HnMlaogZAHQ/view?usp=sharing" download target="blank"
+                            title="Presentation" 
+                            >
+                                Presentation</a>
+                        </div>
+                        <div className="row">
                         <div className="col-lg-4 info">
                             <span>Siarhei Fedarenka</span>
                         </div>
@@ -278,8 +290,7 @@ export default class Home extends React.Component {
                             <img src={mail}/>
                             <span>sergeifedorenkon@gmail.com</span>
                         </div>
-     
-                        
+                        </div>
         
                     </div>
          
