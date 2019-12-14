@@ -6,7 +6,6 @@ import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 import NotFound from "../NotFound";
 import Helmet from "react-helmet";
-import Footer from "../Footer";
 
 export default class App extends React.Component {
   render() {
